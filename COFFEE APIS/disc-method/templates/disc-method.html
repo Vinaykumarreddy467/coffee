@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+    function home() {
+    
+        var portNumber = 5500; 
+        var redirectURL = window.location.protocol + "//" + window.location.hostname + ":" + portNumber;
+        window.location.href = redirectURL;
+    }
+    </script>
+   
+    <title>Display MySQL Data</title>
+</head>
+<body>
+    <div>
+        <button onclick="home()">HOME</button>
+    </div> 
+    <h1>Data From DATABASE</h1>
+    <table>
+        <tr>
+            <th>S.NO</th>
+            <th>ITEM</th>
+            <th>PRICE</th>
+            <!-- Add more table headers for your data columns -->
+        </tr>
+        {% for row in data %}
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[3] }}</td>
+                <td>{{ row[4] }}</td>
+                <td>{{ row[5] }}</td>
+                <td>{{ row[6] }}</td>
+                <td>{{ row[7] }}</td>
+                <td>{{ row[8] }}</td>
+                <td>{{ row[9] }}</td>
+                <td>{{ row[10] }}</td>
+                <td>{{ row[11] }}</td>
+                <td>{{ row[12] }}</td>
+                <td>{{ row[13] }}</td>
+                <td>{{ row[14] }}</td>
+                <!-- Add more table data cells for your data columns -->
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

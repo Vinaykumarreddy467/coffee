@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function home() {
+        
+            var portNumber = 5500; 
+            var redirectURL = window.location.protocol + "//" + window.location.hostname + ":" + portNumber;
+            window.location.href = redirectURL;
+        }
+    </script>
+    <title>Delete Data </title>
+</head>
+<body>
+    <button onclick="home()">HOME</button>
+    <h1>Delete Data</h1>
+    <form action="/delete" method="post">
+        ENTER THE THE ITEM TO BE DELETED: <input type="text" name="data_to_delete"><br>
+        <input type="submit" value="Delete">
+    </form>
+</body>
+</html>

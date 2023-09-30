@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function home() {
+        
+            var portNumber = 5500; 
+            var redirectURL = window.location.protocol + "//" + window.location.hostname + ":" + portNumber;
+            window.location.href = redirectURL;
+        }
+        </script>
+    <title>Item Form</title>
+</head>
+<body>
+    <div>
+        <button onclick="home()">HOME</button>
+    </div>
+    <h1>Add Item</h1>
+    <form action="/submit" method="post">
+        
+        <label for="SNO">S.no:</label>
+        <input type="integer" id="SNO" name="SNO"><br><br>
+        <label for="item">Item Name:</label>
+        <input type="text" id="item_name" name="item"><br><br>
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price"><br><br>
+        
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
