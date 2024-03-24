@@ -1,4 +1,4 @@
-here i wsed the port 5500 as default port for the home butten in all the pages
+here i used the port 5500 as default port for the home butten in all the pages
 
 IN THIS PROJECT I NAVIGATED TO THE PORTS WHICH ARE HAVING THE DATA BEFORE WE CALL THEM 
 
